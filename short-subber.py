@@ -5,6 +5,8 @@ import pysrt
 from moviepy.editor import  TextClip, CompositeVideoClip, VideoFileClip, ImageClip
 from youtube_transcript_api import YouTubeTranscriptApi
 
+# to install necessary libs run this prompt: pip install -r requirements.txt
+
 def download_video(url, filename):
     yt = YouTube(url)
     video = yt.streams.filter(file_extension='mp4').first()
